@@ -187,7 +187,11 @@ grade.forEach((i) => {
 });
 
 function gp() {
-	let ans = totalGrade.value / totalUnit.value;
+	if (loadArray.length === gradeArray.length) {
+		let ans = totalGrade.value / totalUnit.value;
+	} else {
+		alert("something is missing \n Refresh the page  and read the guide");
+	}
 
 	gpC.textContent = ans;
 }

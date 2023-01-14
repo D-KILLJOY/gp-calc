@@ -83,6 +83,7 @@ input {
 	color: #fff;
 	font-weight: 700;
 	margin-bottom: 2rem;
+	cursor: pointer;
 }
 
 .gp {
@@ -91,4 +92,17 @@ input {
 	margin-left: 1rem;
 	color: #000;
 	margin-bottom: 3rem;
+}
+
+.help h2 {
+	text-decoration: underline;
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+}
+
+.help p {
+	font-size: 1.3rem;
+	font-weight: 600;
+	width: 30rem;
+	text-align: center;
 }
