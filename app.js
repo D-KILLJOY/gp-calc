@@ -108,7 +108,7 @@ unitLoad.forEach((i) => {
 });
 
 grade.forEach((i) => {
-	i.addEventListener("keyup", (e) => {
+	i.addEventListener("keypress", (e) => {
 		if (e.key === "a" || e.key === "A") {
 			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
 				i.value = 5;
