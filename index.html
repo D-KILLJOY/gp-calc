@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<main class="container">
+			<h2>G.P <span class="gp">5</span></h2>
+			<form action="">
+				<div class="row">
+					<h2>UNIT LOAD</h2>
+					<div class="input-con d-flex">
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<input type="number" min="0" class="unit-load" />
+						<div class="tot-con">
+							<h2>Total Grade</h2>
+							<input type="number" class="total-grade" readonly />
+						</div>
+						<div class="tot-con">
+							<h2>Total U.L</h2>
+							<input type="number" class="total-unit" readonly />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<h2>GRADE</h2>
+					<div class="input-con d-flex">
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+						<input type="text" maxlength="1" class="grade" />
+					</div>
+				</div>
+			</form>
+			<button type="button" class="calc-btn">Calc</button>
+		</main>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
