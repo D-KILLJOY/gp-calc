@@ -106,3 +106,8 @@ input {
 	width: 30rem;
 	text-align: center;
 }
+
+.con p {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
