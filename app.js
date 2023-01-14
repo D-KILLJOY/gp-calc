@@ -31,6 +31,8 @@ function getTotalGrade() {
 	}
 	totalGrade.value = multipliedSum;
 	gp();
+	calcBtn.setAttribute("disabled", "true");
+	calcBtn.style.backgroundColor = "red";
 }
 
 function addLoadArray() {
@@ -109,7 +111,6 @@ unitLoad.forEach((i) => {
 
 grade.forEach((i) => {
 	i.addEventListener("input", () => {
-		// if (e.key === "Enter") {
 		if (i.value === "a" || i.value === "A") {
 			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
 				i.value = 5;
@@ -182,7 +183,6 @@ grade.forEach((i) => {
 				i.value = "";
 			}
 		}
-		// }
 	});
 });
 
