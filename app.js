@@ -108,81 +108,81 @@ unitLoad.forEach((i) => {
 });
 
 grade.forEach((i) => {
-	i.addEventListener("keypress", (e) => {
-		if (e.key === "Enter") {
-			if (i.value === "a" || i.value === "A") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 5;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
-			} else if (i.value === "b" || i.value === "B") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 4;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
+	i.addEventListener("input", () => {
+		// if (e.key === "Enter") {
+		if (i.value === "a" || i.value === "A") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 5;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
+			}
+		} else if (i.value === "b" || i.value === "B") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 4;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
 
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
-			} else if (i.value === "c" || i.value === "C") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 3;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
+			}
+		} else if (i.value === "c" || i.value === "C") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 3;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
 
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
-			} else if (i.value === "d" || i.value === "D") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 2;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
+			}
+		} else if (i.value === "d" || i.value === "D") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 2;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
 
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
-			} else if (i.value === "e" || i.value === "E") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 1;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
+			}
+		} else if (i.value === "e" || i.value === "E") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 1;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
 
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
-			} else if (i.value === "f" || i.value === "F") {
-				if (gradeArray.length < loadArray.length && loadArray.length > 0) {
-					i.value = 0;
-					gradeArray.push(parseInt(i.value));
-					i.setAttribute("disabled", "true");
-					gradeArraySum = 0;
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
+			}
+		} else if (i.value === "f" || i.value === "F") {
+			if (gradeArray.length < loadArray.length && loadArray.length > 0) {
+				i.value = 0;
+				gradeArray.push(parseInt(i.value));
+				i.setAttribute("disabled", "true");
+				gradeArraySum = 0;
 
-					addGradeArray();
-				} else {
-					alert("input unit load");
-					i.value = "";
-				}
+				addGradeArray();
+			} else {
+				alert("input unit load");
+				i.value = "";
 			}
 		}
+		// }
 	});
 });
 
