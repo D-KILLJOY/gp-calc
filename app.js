@@ -7,6 +7,7 @@ const totalGrade = document.querySelector(".total-grade");
 const calcBtn = document.querySelector(".calc-btn");
 
 const gpC = document.querySelector(".gp");
+const link = document.querySelector("#new-link");
 
 const loadArray = [];
 let loadArraySum = 0;
@@ -16,6 +17,13 @@ let gradeArraySum = 0;
 
 const multiplied = [];
 let multipliedSum = 0;
+
+const confirmed = window.confirm(
+	"A new version is available \n Would you like to use it now ?"
+);
+if (confirmed) {
+	window.location.href = link.href;
+}
 
 function multiply() {
 	for (let i = 0; i < loadArray.length; i++) {

@@ -111,3 +111,16 @@ input {
 	font-size: 1.3rem;
 	font-weight: 600;
 }
+
+.new-link {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.new-link a {
+	font-weight: 800;
+	text-decoration: none;
+	color: red;
+	border: 2px solid red;
+	padding: 0.1rem 1rem;
+}
